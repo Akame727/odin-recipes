@@ -5,11 +5,42 @@
     <meta charset="utf-8" />
   </head>
   <body>
-    <h1>Recipes</h1>
+    <style>
+      .animated-rainbow {
+        font-size: 48px;
+        background: linear-gradient(
+            to right,
+            red,
+            orange,
+            yellow,
+            green,
+            blue,
+            indigo,
+            violet,
+            red
+          )
+          0% 0% / 200% auto;
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: rainbow-flow 3s linear infinite;
+      }
+      @keyframes rainbow-flow {
+        to {
+          background-position: 200% center;
+        }
+      }
+      body {
+        background-image: url("../images/2ndopt2.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+      }
+    </style>
+    <h1 class="animated-rainbow">TOP 3 TV-shows</h1>
     <ul>
-      <li><a href="./recipes/pasta/carbonara.html">carbonara</a></li>
+      <li><a href="./recipes/pasta/Arcane.html">Arcane</a></li>
       <li><a href="./recipes/pasta/risotto.html">risotto</a></li>
     </ul>
   </body>
 </html>
-gggggggggggggggggggggggggggggggggggggggggggggggg
